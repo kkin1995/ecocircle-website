@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCircle - Waste Marketplace</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        
+        /* Header styles */
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #27ae60 3px solid;
+        }
+        
+        header a {
+            color: #ecf0f1;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        
+        header #branding {
+            float: left;
+        }
+        
+        header #branding h1 {
+            margin: 0;
+        }
+        
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        
+        header .highlight, header .current a {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        
+        /* Showcase */
+        #showcase {
+            min-height: 400px;
+            background: url('https://imagedelivery.net/5ejkUOtsMH5sf63fw6q33Q/c7d70605-a2c8-4b8c-bd1d-88a1d2b59200/public') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+        }
+        
+        #showcase::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        #showcase .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        #showcase p {
+            font-size: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        /* Boxes */
+        #boxes {
+            margin-top: 20px;
+        }
+        
+        #boxes .box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        #boxes .box img {
+            width: 90px;
+            height: 90px;
+            background-color: #27ae60;
+            border-radius: 50%;
+            padding: 15px;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #2c3e50;
+            text-align: center;
+        }
+        
+        /* Media Queries */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li,
+            #boxes .box {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            
+            header {
+                padding-bottom: 20px;
+            }
+            
+            #showcase h1 {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Eco</span>Circle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Revolutionizing Waste Management</h1>
+            <p>Connect, Recycle, and Contribute to a Cleaner Environment</p>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z'/%3E%3C/svg%3E" alt="Connect Icon">
+                <h3>Connect</h3>
+                <p>Join our marketplace and connect with waste generators and recyclers.</p>
+            </div>
+            <div class="box">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'/%3E%3C/svg%3E" alt="Recycle Icon">
+                <h3>Recycle</h3>
+                <p>Turn your waste into valuable resources through our efficient recycling network.</p>
+            </div>
+            <div class="box">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01'/%3E%3C/svg%3E" alt="Impact Icon">
+                <h3>Impact</h3>
+                <p>Make a positive environmental impact while supporting the local economy.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>EcoCircle Waste Marketplace, Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>
